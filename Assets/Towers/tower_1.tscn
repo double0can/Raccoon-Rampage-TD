@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://buksh6dhynob0"]
+
+[ext_resource type="Texture2D" uid="uid://dokpd1hpmfefi" path="res://Assets/Towers/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png" id="1_dfroe"]
+[ext_resource type="Script" uid="uid://cqw10mie7n2q3" path="res://towerScript.gd" id="2_ifhvj"]
+
+[node name="Tower1" type="Node2D"]
+
+[node name="T1" type="Sprite2D" parent="."]
+position = Vector2(191.00002, 140)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_dfroe")
+script = ExtResource("2_ifhvj")

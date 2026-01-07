@@ -1,11 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764700870
+::res://::1767744035
 icon.svg::CompressedTexture2D::4670022835199930747::1764695209::1764695214::1::::<><><>0<>0<>908d9ef7907f82542fc53034f136e8e4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Assets/::1764697029
+towerScript.gd::GDScript::5942903105707270032::1764703891::0::1::::<>Sprite2D<><>0<>0<><>::
+::res://Assets/::1767744797
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
 ::res://Assets/Enemies/::1764695540
-::res://Assets/Towers/::1764701302
-face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png::CompressedTexture2D::8163467128944069322::1703954972::1764701304::1::::<><><>0<>0<>5273fcd560137d6bfc8ce43fcf46851e<>res://.godot/imported/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png-7910b117e381c479f0783cc8827fe8e8.ctex::
+::res://Assets/Map/::1767744799
+CITY-TILES-.png::CompressedTexture2D::739322352460745112::1767744718::1767744861::1::::<><><>0<>0<>2958ab9805cb62c32a251e9d162c5234<>res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex::
+::res://Assets/Towers/::1767744207
+enemy place holder.png::CompressedTexture2D::795036447772822061::1767744166::1767744207::1::::<><><>0<>0<>7b8b88d6c75754e1e7b72924dc884c43<>res://.godot/imported/enemy place holder.png-e09e863a319ec9f7c1f18af200c279b5.ctex::
+tower_1.tscn::PackedScene::3811948373630392059::1764703948::0::1::::<><><>0<>0<><>::uid://dokpd1hpmfefi::::res://Assets/Towers/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png<>uid://cqw10mie7n2q3::::res://towerScript.gd
 ::res://Resources/::1764697027
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
 ::res://Scenes/::1764697466

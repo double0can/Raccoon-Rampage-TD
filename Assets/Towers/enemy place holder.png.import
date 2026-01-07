@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dokpd1hpmfefi"
-path="res://.godot/imported/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png-7910b117e381c479f0783cc8827fe8e8.ctex"
+uid="uid://lleetcgfoosr"
+path="res://.godot/imported/enemy place holder.png-e09e863a319ec9f7c1f18af200c279b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png"
-dest_files=["res://.godot/imported/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png-7910b117e381c479f0783cc8827fe8e8.ctex"]
+source_file="res://Assets/Towers/enemy place holder.png"
+dest_files=["res://.godot/imported/enemy place holder.png-e09e863a319ec9f7c1f18af200c279b5.ctex"]
 
 [params]
 
