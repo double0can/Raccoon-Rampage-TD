@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://dpxwml2eyj7ko"]
+[gd_scene load_steps=11 format=4 uid="uid://dpxwml2eyj7ko"]
 
 [ext_resource type="Texture2D" uid="uid://ksesb8qm22gi" path="res://Assets/Map/CITY-TILES-.png" id="1_d7wqs"]
 [ext_resource type="Script" uid="uid://nfovf5mldrpb" path="res://Scenes/Main Scene/Game Logic.gd" id="1_raftv"]
 [ext_resource type="PackedScene" uid="uid://7i3jv72difew" path="res://Scenes/Towers/default_tower.tscn" id="3_ymbon"]
+[ext_resource type="Script" uid="uid://bi4g5y6btf2qo" path="res://Assets/Map/WaveManager.gd" id="4_jltna"]
+[ext_resource type="PackedScene" uid="uid://655ywipgkuoq" path="res://Scenes/Enemies/enemy.tscn" id="5_pu8t1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_raftv"]
 texture = ExtResource("1_d7wqs")
@@ -339,3 +341,11 @@ curve = SubResource("Curve2D_ey2xw")
 
 [node name="Default Tower" parent="Node2D" instance=ExtResource("3_ymbon")]
 position = Vector2(-13, -63)
+
+[node name="WaveManager" type="Marker2D" parent="." node_paths=PackedStringArray("path")]
+script = ExtResource("4_jltna")
+enemyScene = ExtResource("5_pu8t1")
+path = NodePath("../Path2D")
+
+[node name="Timer" type="Timer" parent="WaveManager"]
+autostart = true
