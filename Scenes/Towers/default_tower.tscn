@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://7i3jv72difew"]
+[gd_scene load_steps=4 format=3 uid="uid://7i3jv72difew"]
 
 [ext_resource type="Script" uid="uid://d4e3gnqvk0v3h" path="res://Scenes/Towers/default_tower.gd" id="1_1is5w"]
 [ext_resource type="Texture2D" uid="uid://c7dd2i62fohxt" path="res://Assets/Towers/toni_with_wepon (1).png" id="1_r6xvt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1is5w"]
 
 [node name="Default Tower" type="Node2D"]
 script = ExtResource("1_1is5w")
@@ -10,3 +12,13 @@ script = ExtResource("1_1is5w")
 position = Vector2(13, 19)
 scale = Vector2(1.7222223, 2.0555556)
 texture = ExtResource("1_r6xvt")
+
+[node name="Range" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range"]
+position = Vector2(16.999998, 13.999999)
+scale = Vector2(15, 15)
+shape = SubResource("CircleShape2D_1is5w")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]
