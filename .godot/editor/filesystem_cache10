@@ -1,26 +1,30 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769736170
+::res://::1774365593
+GameManager.gd::GDScript::9164953497337448698::1774365567::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::4670022835199930747::1764695209::1764695214::1::::<><><>0<>0<>908d9ef7907f82542fc53034f136e8e4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-towerScript.gd::GDScript::5942903105707270032::1764703891::0::1::::<>Sprite2D<><>0<>0<><>::
-::res://Assets/::1767744797
+towerScript.gd::GDScript::5942903105707270032::1774365567::0::1::::<>Sprite2D<><>0<>0<><>::
+::res://Assets/::1774365567
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
-::res://Assets/Enemies/::1767750963
-enemy place holder.png::CompressedTexture2D::4756912829568905278::1767744166::1767750963::1::::<><><>0<>0<>2505a0fed3aad324fc071db6c143ac3c<>res://.godot/imported/enemy place holder.png-2f0c662bb315606f58ed3461ffb3de9d.ctex::
-::res://Assets/Map/::1767751566
-CITY-TILES-.png::CompressedTexture2D::739322352460745112::1767744718::1767744861::1::::<><><>0<>0<>2958ab9805cb62c32a251e9d162c5234<>res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex::
-map_1.tscn::PackedScene::8260933217041660394::1767751566::0::1::::<><><>0<>0<><>::uid://ksesb8qm22gi::::res://Assets/Map/CITY-TILES-.png<>uid://nfovf5mldrpb::::res://Scenes/Main Scene/Game Logic.gd
-::res://Assets/Towers/::1769737665
-toni_with_wepon (1).png::CompressedTexture2D::7025308333788884637::1755112788::1769737670::1::::<><><>0<>0<>69b8567cb053df90ec7e04049df0a5d4<>res://.godot/imported/toni_with_wepon (1).png-9ea55f45abc0c7883e2ddcf1431dfc9a.ctex::
-tower_1.tscn::PackedScene::3811948373630392059::1764703948::0::1::::<><><>0<>0<><>::uid://dokpd1hpmfefi::::res://Assets/Towers/face-with-raised-eyebrow-emoji-2048x1974-c3jlfg7b.png<>uid://cqw10mie7n2q3::::res://towerScript.gd
+::res://Assets/Enemies/::1774365567
+trash bag.png::CompressedTexture2D::400329961951182777::1774365567::1774365567::1::::<><><>0<>0<>d88d6ef8030a5cbc43fc307efeb10fb0<>res://.godot/imported/trash bag.png-ee18aa7b95ce39be468e9a0fce9cca92.ctex::
+::res://Assets/Map/::1774365567
+CITY-TILES-.png::CompressedTexture2D::739322352460745112::1774365567::1774365567::1::::<><><>0<>0<>2958ab9805cb62c32a251e9d162c5234<>res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex::
+map_1.tscn::PackedScene::8260933217041660394::1774365567::0::1::::<><><>0<>0<><>::uid://ksesb8qm22gi::::res://Assets/Map/CITY-TILES-.png<>uid://nfovf5mldrpb::::res://Scenes/Main Scene/Game Logic.gd<>uid://7i3jv72difew::::res://Scenes/Towers/default_tower.tscn
+::res://Assets/Towers/::1774365567
+toni_with_wepon (1).png::CompressedTexture2D::7025308333788884637::1774365567::1774365567::1::::<><><>0<>0<>69b8567cb053df90ec7e04049df0a5d4<>res://.godot/imported/toni_with_wepon (1).png-9ea55f45abc0c7883e2ddcf1431dfc9a.ctex::
 ::res://Resources/::1764697027
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1767749635
+::res://Scenes/::1774365567
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
-::res://Scenes/Enemies/::1767751604
-enemy.gd::GDScript::5373947070715414341::1767750648::0::1::::<>PathFollow2D<><>0<>0<><>::
-enemy.tscn::PackedScene::2239651022799613132::1767751604::0::1::::<><><>0<>0<><>::uid://b81jwofq2kjcw::::res://Assets/Enemies/enemy place holder.png<>uid://citgegk06du3v::::res://Scenes/Enemies/enemy.gd
-::res://Scenes/Main Scene/::1767751246
-Game Logic.gd::GDScript::923664705156399243::1767751246::0::1::::<>Node2D<><>0<>0<><>::
-main_scene.tscn::PackedScene::4792328923905986518::1767750064::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1764697023
+::res://Scenes/Enemies/::1774365567
+enemy.gd::GDScript::5373947070715414341::1774365567::0::1::::<>PathFollow2D<><>0<>0<><>::
+enemy.tscn::PackedScene::2239651022799613132::1774365567::0::1::::<><><>0<>0<><>::uid://citgegk06du3v::::res://Scenes/Enemies/enemy.gd<>uid://fx6m1vxqqew4::::res://Assets/Enemies/trash bag.png
+::res://Scenes/Main Scene/::1774365567
+Game Logic.gd::GDScript::923664705156399243::1774365567::0::1::::<>Node2D<><>0<>0<><>::
+main_scene.tscn::PackedScene::4792328923905986518::1774365567::0::1::::<><><>0<>0<><>::
+::res://Scenes/Towers/::1774365567
+default_tower.gd::GDScript::9204707526648309403::1774365567::0::1::::<>Node2D<><>0<>0<><>::
+default_tower.tscn::PackedScene::2264275320047299714::1774365567::0::1::::<><><>0<>0<><>::uid://d4e3gnqvk0v3h::::res://Scenes/Towers/default_tower.gd<>uid://c7dd2i62fohxt::::res://Assets/Towers/toni_with_wepon (1).png
+::res://Scripts/::1774365567
+GameManager.gd::GDScript::2374181080868665866::1774365567::0::1::::<>Node<><>0<>0<><>::
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b81jwofq2kjcw"
-path="res://.godot/imported/enemy place holder.png-2f0c662bb315606f58ed3461ffb3de9d.ctex"
+uid="uid://fx6m1vxqqew4"
+path="res://.godot/imported/trash bag.png-ee18aa7b95ce39be468e9a0fce9cca92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Enemies/enemy place holder.png"
-dest_files=["res://.godot/imported/enemy place holder.png-2f0c662bb315606f58ed3461ffb3de9d.ctex"]
+source_file="res://Assets/Enemies/trash bag.png"
+dest_files=["res://.godot/imported/trash bag.png-ee18aa7b95ce39be468e9a0fce9cca92.ctex"]
 
 [params]
 
