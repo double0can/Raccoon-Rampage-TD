@@ -16,5 +16,4 @@ func livesLost(amount: int) -> void:
 	
 	if lives <= 0:
 		gameOver.emit()
-		#add game over logic here later
-		print("Game Over!")
+		print("Game over!")

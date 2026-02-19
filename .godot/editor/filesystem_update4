@@ -1,7 +1,7 @@
 res://Scenes/Enemies/enemy.tscn
 res://Scripts/GameManager.gd
+res://GameManager.gd
+res://Scenes/Game Over Scene/game_over_ui.tscn
+res://Scenes/Game Over Scene/gameOverUI.gd
 res://Assets/Map/map_1.tscn
 res://Scenes/Enemies/enemy.gd
-res://Assets/Map/WaveManager.gd
-res://Scenes/Towers/default_tower.gd
-res://Scenes/Towers/default_tower.tscn
