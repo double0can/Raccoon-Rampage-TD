@@ -7,6 +7,7 @@
 radius = 11.313708
 
 [node name="Enemy" type="PathFollow2D" groups=["enemy"]]
+loop = false
 script = ExtResource("1_jcvw6")
 
 [node name="enemySprite" type="Sprite2D" parent="."]

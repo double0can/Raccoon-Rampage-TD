@@ -1,6 +1,6 @@
 extends PathFollow2D
 
-@export var speed = 75
+@export var speed = 125
 @export var playerDamage = 1
 
 #built in function to call and object to move 60 times a second

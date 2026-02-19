@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3lr6vmpj25ov"]
+
+[ext_resource type="Script" uid="uid://c2lfa5i1nyj31" path="res://Scenes/Game Over Scene/gameOverUI.gd" id="1_d7amb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dpmtf"]
+font_size = 75
+font_color = Color(0.95465547, 0, 0.0022577173, 1)
+outline_size = 14
+shadow_size = 0
+shadow_color = Color(1, 1, 1, 0)
+
+[node name="GameOverUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_d7amb")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game Over" type="Label" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "GAME OVER!"
+label_settings = SubResource("LabelSettings_dpmtf")
+
+[node name="RestartButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Restart↺"
+
+[node name="MainMenuButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Main Menu"
+
+[node name="QuitButton" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Quit Game"
