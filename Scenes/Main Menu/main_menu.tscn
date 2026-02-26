@@ -1,0 +1,103 @@
+[gd_scene load_steps=3 format=3 uid="uid://chmj35yee4ghh"]
+
+[ext_resource type="Texture2D" uid="uid://poc6hfwyr4nj" path="res://Assets/title text.png" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://c7y8mv0gplghr" path="res://Scenes/Main Menu/mainMenu.gd" id="1_7vrkn"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="MainContainer"]
+position = Vector2(150, -200)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_06t4h")
+
+[node name="PlayButton" type="Button" parent="MainContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.07054862, 0.65879726, 0.82164127, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 113
+text = "PLAY"
+flat = true
+
+[node name="QuitButton" type="Button" parent="MainContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.90526885, 3.3450872e-06, 1.1551381e-06, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 113
+text = "QUIT"
+flat = true
+
+[node name="LevelContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="LevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "SELECT MAP"
+
+[node name="#SPACE" type="Control" parent="LevelContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Map1" type="Button" parent="LevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "BACK ROADS"
+
+[node name="BackButton" type="Button" parent="LevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 10
+theme_override_font_sizes/font_size = 50
+text = "BACK"
+
+[node name="#SPACE2" type="Control" parent="LevelContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[connection signal="pressed" from="MainContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MainContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="LevelContainer/Map1" to="." method="_on_map_1_button_pressed"]
+[connection signal="pressed" from="LevelContainer/BackButton" to="." method="_on_back_button_pressed"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ksesb8qm22gi"
-path="res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex"
+path="res://.godot/imported/CITY-TILES-.png-5854b09098b214a0cef0972e74ab1ed0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Map/CITY-TILES-.png"
-dest_files=["res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex"]
+source_file="res://Scenes/Map/CITY-TILES-.png"
+dest_files=["res://.godot/imported/CITY-TILES-.png-5854b09098b214a0cef0972e74ab1ed0.ctex"]
 
 [params]
 

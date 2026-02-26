@@ -1,5 +1,6 @@
+res://main_menu.tscn
 res://Assets/Map/map_1.tscn
-res://Scripts/GameManager.gd
-res://GameManager.gd
-res://Scenes/Enemies/enemy.gd
-res://Scenes/Enemies/enemy.tscn
+res://mainMenu.gd
+res://Scenes/Map/map_1.tscn
+res://Scenes/Main Menu/main_menu.tscn
+res://Scenes/Main Menu/mainMenu.gd
