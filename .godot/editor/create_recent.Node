@@ -1,14 +1,14 @@
+Label
+MarginContainer
+CanvasLayer
 Button
 Control
-Label
 VBoxContainer
 Sprite2D
 ColorRect
-CanvasLayer
 CollisionShape2D
 Area2D
 Timer
 Marker2D
 Node2D
 CharacterBody2D
-PathFollow2D

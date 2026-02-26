@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://dpxwml2eyj7ko"]
+[gd_scene load_steps=13 format=4 uid="uid://dpxwml2eyj7ko"]
 
 [ext_resource type="Texture2D" uid="uid://ksesb8qm22gi" path="res://Scenes/Map/CITY-TILES-.png" id="1_d7wqs"]
 [ext_resource type="Script" uid="uid://nfovf5mldrpb" path="res://Scenes/Main Scene/Game Logic.gd" id="1_raftv"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bi4g5y6btf2qo" path="res://Scenes/Map/WaveManager.gd" id="4_jltna"]
 [ext_resource type="PackedScene" uid="uid://655ywipgkuoq" path="res://Scenes/Enemies/enemy.tscn" id="5_pu8t1"]
 [ext_resource type="PackedScene" uid="uid://b3lr6vmpj25ov" path="res://Scenes/Game Over Scene/game_over_ui.tscn" id="6_ey2xw"]
+[ext_resource type="PackedScene" uid="uid://ct3h6kcm1gyr3" path="res://Scenes/HUD/HUD.tscn" id="7_yjh2d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_raftv"]
 texture = ExtResource("1_d7wqs")
@@ -352,3 +353,5 @@ path = NodePath("../Path2D")
 autostart = true
 
 [node name="GameOverUI" parent="." instance=ExtResource("6_ey2xw")]
+
+[node name="HUD" parent="." instance=ExtResource("7_yjh2d")]
