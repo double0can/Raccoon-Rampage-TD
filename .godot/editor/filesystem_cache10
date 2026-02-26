@@ -1,31 +1,37 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1771449056
-GameManager.gd::GDScript::9164953497337448698::1770859380::0::1::::<>Node<><>0<>0<><>::
+::res://::1772072970
+GameManager.gd::GDScript::9164953497337448698::1771468179::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D::4670022835199930747::1764695209::1764695214::1::::<><><>0<>0<>908d9ef7907f82542fc53034f136e8e4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mainMenu.gd::GDScript::7070455662092385631::1772072736::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::5289533874029425717::1772073079::0::1::::<><><>0<>0<><>::uid://poc6hfwyr4nj::::res://Assets/title text.png<>uid://c7y8mv0gplghr::::res://mainMenu.gd
 towerScript.gd::GDScript::5942903105707270032::1764703891::0::1::::<>Sprite2D<><>0<>0<><>::
-::res://Assets/::1767744797
+::res://Assets/::1772072649
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
+title text.png::CompressedTexture2D::1081911113143733951::1772031811::1772031811::1::::<><><>0<>0<>8b5bc336ddc61e617261e8ea12b8b3d4<>res://.godot/imported/title text.png-23b2905db00e0fcfa364141fa9ad3f42.ctex::
 ::res://Assets/Enemies/::1770864130
 trash bag.png::CompressedTexture2D::400329961951182777::1770864126::1770864130::1::::<><><>0<>0<>d88d6ef8030a5cbc43fc307efeb10fb0<>res://.godot/imported/trash bag.png-ee18aa7b95ce39be468e9a0fce9cca92.ctex::
-::res://Assets/Map/::1770864132
-CITY-TILES-.png::CompressedTexture2D::739322352460745112::1767744718::1767744861::1::::<><><>0<>0<>2958ab9805cb62c32a251e9d162c5234<>res://.godot/imported/CITY-TILES-.png-69655003f00ede33d1589c130c1805c5.ctex::
-map_1.tscn::PackedScene::8260933217041660394::1770864132::0::1::::<><><>0<>0<><>::uid://ksesb8qm22gi::::res://Assets/Map/CITY-TILES-.png<>uid://nfovf5mldrpb::::res://Scenes/Main Scene/Game Logic.gd<>uid://7i3jv72difew::::res://Scenes/Towers/default_tower.tscn<>uid://bi4g5y6btf2qo::::res://Assets/Map/WaveManager.gd<>uid://655ywipgkuoq::::res://Scenes/Enemies/enemy.tscn
-WaveManager.gd::GDScript::3008217571959233746::1770861490::0::1::::<>Node<><>0<>0<><>::
 ::res://Assets/Towers/::1769738340
 toni_with_wepon (1).png::CompressedTexture2D::7025308333788884637::1755112788::1769737670::1::::<><><>0<>0<>69b8567cb053df90ec7e04049df0a5d4<>res://.godot/imported/toni_with_wepon (1).png-9ea55f45abc0c7883e2ddcf1431dfc9a.ctex::
 ::res://Resources/::1764697027
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1769738399
+::res://Scenes/::1772072649
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
-::res://Scenes/Enemies/::1770863994
-enemy.gd::GDScript::5373947070715414341::1770860726::0::1::::<>PathFollow2D<><>0<>0<><>::
-enemy.tscn::PackedScene::2239651022799613132::1770863994::0::1::::<><><>0<>0<><>::uid://citgegk06du3v::::res://Scenes/Enemies/enemy.gd<>uid://fx6m1vxqqew4::::res://Assets/Enemies/trash bag.png
+::res://Scenes/Enemies/::1771468484
+enemy.gd::GDScript::5373947070715414341::1771468484::0::1::::<>PathFollow2D<><>0<>0<><>::
+enemy.tscn::PackedScene::2239651022799613132::1771468484::0::1::::<><><>0<>0<><>::uid://citgegk06du3v::::res://Scenes/Enemies/enemy.gd<>uid://fx6m1vxqqew4::::res://Assets/Enemies/trash bag.png
+::res://Scenes/Game Over Scene/::1771468389
+gameOverUI.gd::GDScript::6690953475130154054::1771468389::0::1::::<>CanvasLayer<><>0<>0<><>::
+game_over_ui.tscn::PackedScene::4375505131563407793::1771467908::0::1::::<><><>0<>0<><>::uid://c2lfa5i1nyj31::::res://Scenes/Game Over Scene/gameOverUI.gd
+::res://Scenes/Main Menu/::0
 ::res://Scenes/Main Scene/::1767751246
 Game Logic.gd::GDScript::923664705156399243::1767751246::0::1::::<>Node2D<><>0<>0<><>::
 main_scene.tscn::PackedScene::4792328923905986518::1767750064::0::1::::<><><>0<>0<><>::
+::res://Scenes/Map/::1772072722
+CITY-TILES-.png::CompressedTexture2D::739322352460745112::1767744718::1772072649::1::::<><><>0<>0<>d069925832328f8a69123028c769e395<>res://.godot/imported/CITY-TILES-.png-5854b09098b214a0cef0972e74ab1ed0.ctex::
+map_1.tscn::PackedScene::8260933217041660394::1772072722::0::1::::<><><>0<>0<><>::uid://ksesb8qm22gi::::res://Scenes/Map/CITY-TILES-.png<>uid://nfovf5mldrpb::::res://Scenes/Main Scene/Game Logic.gd<>uid://7i3jv72difew::::res://Scenes/Towers/default_tower.tscn<>uid://bi4g5y6btf2qo::::res://Scenes/Map/WaveManager.gd<>uid://655ywipgkuoq::::res://Scenes/Enemies/enemy.tscn<>uid://b3lr6vmpj25ov::::res://Scenes/Game Over Scene/game_over_ui.tscn
+WaveManager.gd::GDScript::3008217571959233746::1770861490::0::1::::<>Node<><>0<>0<><>::
 ::res://Scenes/Towers/::1770862961
 default_tower.gd::GDScript::9204707526648309403::1770862961::0::1::::<>Node2D<><>0<>0<><>::
 default_tower.tscn::PackedScene::2264275320047299714::1770862961::0::1::::<><><>0<>0<><>::uid://d4e3gnqvk0v3h::::res://Scenes/Towers/default_tower.gd<>uid://c7dd2i62fohxt::::res://Assets/Towers/toni_with_wepon (1).png
-::res://Scripts/::1770860747
-GameManager.gd::GDScript::2374181080868665866::1770860747::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/::1771465186
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
