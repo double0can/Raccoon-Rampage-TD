@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://cajo7ssep0g1s"]
+[gd_scene load_steps=4 format=3 uid="uid://cajo7ssep0g1s"]
+
+[ext_resource type="PackedScene" uid="uid://7i3jv72difew" path="res://Scenes/Towers/default_tower.tscn" id="1_an3g4"]
+[ext_resource type="PackedScene" uid="uid://lok8tqu854fu" path="res://Scenes/bullet/bullet.tscn" id="1_srt24"]
+[ext_resource type="PackedScene" uid="uid://655ywipgkuoq" path="res://Scenes/Enemies/enemy.tscn" id="2_sr30m"]
 
 [node name="MainScene" type="Node2D"]
+
+[node name="Default Tower" parent="." instance=ExtResource("1_an3g4")]
+
+[node name="Enemy" parent="." instance=ExtResource("2_sr30m")]
+
+[node name="bullet" parent="." instance=ExtResource("1_srt24")]

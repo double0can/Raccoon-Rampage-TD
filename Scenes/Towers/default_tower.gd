@@ -1,7 +1,11 @@
 extends Node2D
 
+@export var bulletScene: PackedScene
+
 var inRange: Array = []
 var currentTarget: Node2D = null
+
+@onready var firePoint = $firePoint
 
 func _process(delta: float) -> void:
 	update_target()
@@ -22,15 +26,28 @@ func update_target():
 		currentTarget = inRange[0]
 
 #When something enters the range circle
-func _on_range_body_entered(body: Node2D) -> void:
+func _on_range_area_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		inRange.append(body)
 
 #When something exits the range circle
-func _on_range_body_exited(body: Node2D) -> void:
+func _on_range_area_exited(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		inRange.erase(body)
 		
 		#if enemy exiting was  target clear target
 		if body == currentTarget:
 			currentTarget = null
+
+
+func _on_fire_rate_timeout() -> void:
+	if currentTarget != null and is_instance_valid(currentTarget):
+		shoot()		
+
+func shoot() -> void:
+	if bulletScene:
+		var newBullet = bulletScene.instantiate()
+		
+		get_tree().current_scene.add_child(newBullet)
+		newBullet.global_position = firePoint.global_position
+		newBullet.global_rotation = global_rotation
