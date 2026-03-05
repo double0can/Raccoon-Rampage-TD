@@ -8,7 +8,7 @@ func _ready():
 	spawning()
 
 func spawning():
-	var new_enemy = enemy_scene.instantiate()
+	var newEnemy = enemy_scene.instantiate()
 	
 	#makes the enemy a child node of the path
-	path_node.add_child(new_enemy)
+	path_node.add_child(newEnemy)
