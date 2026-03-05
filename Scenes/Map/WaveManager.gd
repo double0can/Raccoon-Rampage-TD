@@ -2,20 +2,69 @@ extends Node
 
 @export var enemyScene: PackedScene
 @export var path: Path2D
-@onready var spawn_timer: Timer = $Timer
+@onready var spawnTimer: Timer = $Timer
+
+var currentWaveIndex = 1
+var maxWaves = 30
+var enemiesToSpawn = 0
+
+#trackers to start next wave
+var enemiesAlive = 0 
+var isSpawningDone = false
 
 func _ready() -> void:
-	spawn_timer.timeout.connect(_on_timer_timeout)
+	spawnTimer.timeout.connect(_on_timer_timeout)
+	nextWave()
+
+func nextWave() -> void:
+	if currentWaveIndex > maxWaves:
+		print("victory!")
+		return
+		
+	#Reset tracking for new wave
+	isSpawningDone = false
+	enemiesAlive = 0
+		
+	#increments difficulty
+	enemiesToSpawn = 20 + (currentWaveIndex * 15)
+	var spawnSpeed = max(0.2, 1.5 - (currentWaveIndex * 0.05))
+	
+	spawnTimer.wait_time = spawnSpeed
+	
+	GameManager.currentWave = currentWaveIndex
+	GameManager.waveChanged.emit(GameManager.currentWave)
+	
+	print("Starting Wave ", currentWaveIndex)
+	spawnTimer.start()
 
 func _on_timer_timeout() -> void:
-	spawn_enemy()
+	if enemiesToSpawn > 0:
+		spawnEnemy()
+		enemiesToSpawn -= 1
+		
+	if enemiesToSpawn <= 0:
+		spawnTimer.stop()
+		isSpawningDone = true
 
-func spawn_enemy() -> void:
+func spawnEnemy() -> void:
 	if enemyScene and path:
 		var newEnemy = enemyScene.instantiate()
-		
-	  #adds the enemy as a child of path
 		path.add_child(newEnemy)
-		
-	   #this ensures it starts at the beginning of the path
 		newEnemy.progress_ratio = 0.0
+
+		# tells the WaveManager when this specific enemy dies
+		newEnemy.tree_exited.connect(_on_enemy_destroyed)
+		enemiesAlive += 1
+
+# runs every time an enemy is no longer in the scene either by dying or reaching end
+func _on_enemy_destroyed() -> void:
+	enemiesAlive -= 1
+	
+	#If spawning is finished and no enemies remaining
+	if isSpawningDone and enemiesAlive <= 0:
+		print("Wave cleared")
+		currentWaveIndex += 1
+		
+		#waits 7 seconds before next wave
+		await get_tree().create_timer(7.0).timeout
+		nextWave()

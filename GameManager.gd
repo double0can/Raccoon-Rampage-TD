@@ -2,12 +2,15 @@ extends Node
 
 signal livesChanged(currentLives)
 signal gameOver
+signal waveChanged(currentWave)
 
 var lives = 20
+var currentWave = 1
 
 func _ready() -> void:
 	# Emit the initial value so UI can update
 	livesChanged.emit(lives)
+	waveChanged.emit(currentWave)
 
 func livesLost(amount: int) -> void:
 	lives -= amount
