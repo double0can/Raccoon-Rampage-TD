@@ -21,8 +21,9 @@ func reachedEnd() -> void:
 	
 	queue_free()
 
-func takenDamage(amount: int) -> void:
+func takeDamage(amount: int) -> void:
 	health -= amount
+	print("damage dealt")
 	
 	if health <= 0:
 		die()

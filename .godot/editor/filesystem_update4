@@ -1,8 +1,4 @@
-res://Scenes/bullet/bullet.tscn
-res://Scenes/bullet/bullet.gd
-res://Scenes/Enemies/enemy.gd
-res://Scenes/Towers/default_tower.gd
-res://Scenes/Main Scene/main_scene.tscn
-res://Scenes/Towers/default_tower.tscn
 res://Scenes/Enemies/enemy.tscn
-res://Scenes/Map/map_1.tscn
+res://Scenes/Enemies/enemy.gd
+res://Scenes/bullet/bullet.gd
+res://Scenes/Game Over Scene/game_over_ui.tscn

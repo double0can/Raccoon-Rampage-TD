@@ -8,10 +8,18 @@ func _physics_process(delta: float) -> void:
 	global_position += transform.x * speed * delta
 
 func _on_area_entered(area: Node2D) -> void:
-	# Check if the thing we hit is an enemy
-	if area.is_in_group("enemy"):
-		if area.has_method("takeDamage"):
-			area.takeDamage(damage)
+	dealDamage(area)
+
+func dealDamage(target: Node2D) -> void:
+	if target.is_in_group("enemy"):
+		print("bullet hit")
 		
-		# Destroy the bullet
+		var enemyRoot = target.get_parent()
+		if enemyRoot.has_method("takeDamage"):
+			print("health script attached on parent")
+			enemyRoot.takeDamage(damage)
+			
+		else:
+			print("bullet hit but couldnt find takeDamage")
+			
 		queue_free()
