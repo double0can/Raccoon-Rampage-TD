@@ -1,28 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://7i3jv72difew"]
+[gd_scene load_steps=6 format=3 uid="uid://7i3jv72difew"]
 
 [ext_resource type="Script" uid="uid://d4e3gnqvk0v3h" path="res://Scenes/Towers/default_tower.gd" id="1_1is5w"]
-[ext_resource type="Texture2D" uid="uid://c7dd2i62fohxt" path="res://Assets/Towers/toni_with_wepon (1).png" id="1_r6xvt"]
 [ext_resource type="PackedScene" uid="uid://lok8tqu854fu" path="res://Scenes/bullet/bullet.tscn" id="2_gohhg"]
+[ext_resource type="Texture2D" uid="uid://djigo1dml81y7" path="res://Assets/Towers/raccoon.png" id="3_gohhg"]
+[ext_resource type="Texture2D" uid="uid://cxua7225jb6q8" path="res://Assets/Towers/rifle.png" id="4_g4b1v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1is5w"]
+radius = 9.402128
 
 [node name="Default Tower" type="Node2D"]
 script = ExtResource("1_1is5w")
 bulletScene = ExtResource("2_gohhg")
 
 [node name="Tower1" type="Sprite2D" parent="."]
-scale = Vector2(1.7222223, 2.0555556)
-texture = ExtResource("1_r6xvt")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_gohhg")
+
+[node name="weaponSprite" type="Sprite2D" parent="."]
+position = Vector2(0, 15)
+rotation = 0.41015238
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_g4b1v")
+
+[node name="firePoint" type="Marker2D" parent="weaponSprite"]
+position = Vector2(215.79019, -15.316494)
 
 [node name="Range" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Range"]
-position = Vector2(16.999998, 13.999999)
 scale = Vector2(15, 15)
 shape = SubResource("CircleShape2D_1is5w")
-
-[node name="firePoint" type="Marker2D" parent="."]
-position = Vector2(-18, 11)
 
 [node name="FireRate" type="Timer" parent="."]
 wait_time = 0.87

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7dd2i62fohxt"
-path="res://.godot/imported/toni_with_wepon (1).png-9ea55f45abc0c7883e2ddcf1431dfc9a.ctex"
+uid="uid://djigo1dml81y7"
+path="res://.godot/imported/raccoon.png-69ed8832159c553acd93b1f931380d7d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Towers/toni_with_wepon (1).png"
-dest_files=["res://.godot/imported/toni_with_wepon (1).png-9ea55f45abc0c7883e2ddcf1431dfc9a.ctex"]
+source_file="res://Assets/Towers/raccoon.png"
+dest_files=["res://.godot/imported/raccoon.png-69ed8832159c553acd93b1f931380d7d.ctex"]
 
 [params]
 

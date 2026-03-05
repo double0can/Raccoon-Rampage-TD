@@ -5,13 +5,15 @@ extends Node2D
 var inRange: Array = []
 var currentTarget: Node2D = null
 
-@onready var firePoint = $firePoint
+@onready var weaponSprite: Sprite2D = $weaponSprite
+@onready var firePoint: Marker2D = $weaponSprite/firePoint
+
 
 func _process(delta: float) -> void:
 	update_target()
 	
 	if currentTarget:
-		look_at(currentTarget.global_position)
+		weaponSprite.look_at(currentTarget.global_position)
 
 func update_target():
 	#check if it target is still valid (not dead/despawned)
@@ -50,4 +52,4 @@ func shoot() -> void:
 		
 		get_tree().current_scene.add_child(newBullet)
 		newBullet.global_position = firePoint.global_position
-		newBullet.global_rotation = global_rotation
+		newBullet.global_rotation = weaponSprite.global_rotation
