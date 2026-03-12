@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772675048
+::res://::1773259177
 GameManager.gd::GDScript::9164953497337448698::1772672609::0::1::::<>Node<><>0<>0<><>::
 hud.gd::GDScript::517968769760463375::1772675048::0::1::::<>CanvasLayer<><>0<>0<><>::
 icon.svg::CompressedTexture2D::4670022835199930747::1764695209::1764695214::1::::<><><>0<>0<>908d9ef7907f82542fc53034f136e8e4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -37,8 +37,8 @@ main_scene.tscn::PackedScene::4792328923905986518::1772105947::0::1::::<><><>0<>
 CITY-TILES-.png::CompressedTexture2D::739322352460745112::1767744718::1772072649::1::::<><><>0<>0<>d069925832328f8a69123028c769e395<>res://.godot/imported/CITY-TILES-.png-5854b09098b214a0cef0972e74ab1ed0.ctex::
 map_1.tscn::PackedScene::8260933217041660394::1772674185::0::1::::<><><>0<>0<><>::uid://ksesb8qm22gi::::res://Scenes/Map/CITY-TILES-.png<>uid://nfovf5mldrpb::::res://Scenes/Main Scene/Game Logic.gd<>uid://7i3jv72difew::::res://Scenes/Towers/default_tower.tscn<>uid://bi4g5y6btf2qo::::res://Scenes/Map/WaveManager.gd<>uid://655ywipgkuoq::::res://Scenes/Enemies/enemy.tscn<>uid://b3lr6vmpj25ov::::res://Scenes/Game Over Scene/game_over_ui.tscn<>uid://ct3h6kcm1gyr3::::res://Scenes/HUD/HUD.tscn<>uid://lok8tqu854fu::::res://Scenes/bullet/bullet.tscn
 WaveManager.gd::GDScript::3008217571959233746::1772675506::0::1::::<>Node<><>0<>0<><>::
-::res://Scenes/Towers/::1772676257
-default_tower.gd::GDScript::9204707526648309403::1772105702::0::1::::<>Node2D<><>0<>0<><>::
-default_tower.tscn::PackedScene::2264275320047299714::1772676257::0::1::::<><><>0<>0<><>::uid://d4e3gnqvk0v3h::::res://Scenes/Towers/default_tower.gd<>uid://lok8tqu854fu::::res://Scenes/bullet/bullet.tscn<>uid://djigo1dml81y7::::res://Assets/Towers/raccoon.png
+::res://Scenes/Towers/::1772677167
+default_tower.gd::GDScript::9204707526648309403::1772677167::0::1::::<>Node2D<><>0<>0<><>::
+default_tower.tscn::PackedScene::2264275320047299714::1772677167::0::1::::<><><>0<>0<><>::uid://d4e3gnqvk0v3h::::res://Scenes/Towers/default_tower.gd<>uid://lok8tqu854fu::::res://Scenes/bullet/bullet.tscn<>uid://djigo1dml81y7::::res://Assets/Towers/raccoon.png<>uid://cxua7225jb6q8::::res://Assets/Towers/rifle.png
 ::res://Scripts/::1771465186
 gitkeep.txt::TextFile::-1::1764697006::0::1::::<><><>0<>0<><>::
