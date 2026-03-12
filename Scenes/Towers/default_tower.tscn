@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://7i3jv72difew"]
+[gd_scene load_steps=7 format=3 uid="uid://7i3jv72difew"]
 
 [ext_resource type="Script" uid="uid://d4e3gnqvk0v3h" path="res://Scenes/Towers/default_tower.gd" id="1_1is5w"]
 [ext_resource type="PackedScene" uid="uid://lok8tqu854fu" path="res://Scenes/bullet/bullet.tscn" id="2_gohhg"]
@@ -7,6 +7,9 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1is5w"]
 radius = 9.402128
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4b1v"]
+size = Vector2(71, 21)
 
 [node name="Default Tower" type="Node2D"]
 script = ExtResource("1_1is5w")
@@ -34,6 +37,12 @@ shape = SubResource("CircleShape2D_1is5w")
 [node name="FireRate" type="Timer" parent="."]
 wait_time = 0.87
 autostart = true
+
+[node name="placementHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placementHitbox"]
+position = Vector2(0, 45)
+shape = SubResource("RectangleShape2D_g4b1v")
 
 [connection signal="area_entered" from="Range" to="." method="_on_range_area_entered"]
 [connection signal="area_exited" from="Range" to="." method="_on_range_area_exited"]
