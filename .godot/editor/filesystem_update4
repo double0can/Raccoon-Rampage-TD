@@ -1,2 +1,10 @@
 res://Scenes/Towers/default_tower.tscn
 res://Scenes/Towers/default_tower.gd
+res://GameManager.gd
+res://Scenes/HUD/HUD.tscn
+res://hud.gd
+res://Scenes/Enemies/enemy.gd
+res://Scenes/Enemies/enemy.tscn
+res://Scenes/Map/map_1.tscn
+res://Scenes/HUD/shopToggleButton.gd
+res://Scenes/HUD/towerShopButton.gd
