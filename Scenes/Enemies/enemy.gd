@@ -3,6 +3,7 @@ extends PathFollow2D
 @export var speed = 125
 @export var playerDamage = 1
 @export var health = 1
+@export var value = 3
 
 #built in function to call and object to move 60 times a second
 func _physics_process(delta: float) -> void:
@@ -29,4 +30,5 @@ func takeDamage(amount: int) -> void:
 		die()
 
 func die() -> void:
+	GameManager.addMoney(value)
 	queue_free()

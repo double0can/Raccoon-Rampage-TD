@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ct3h6kcm1gyr3"]
+[gd_scene load_steps=6 format=3 uid="uid://ct3h6kcm1gyr3"]
 
 [ext_resource type="Script" uid="uid://hm54tw8h516j" path="res://hud.gd" id="1_jg6e1"]
+[ext_resource type="Texture2D" uid="uid://djigo1dml81y7" path="res://Assets/Towers/raccoon.png" id="2_mdu8u"]
+[ext_resource type="Script" uid="uid://b43vx8cul31wu" path="res://Scenes/HUD/towerShopButton.gd" id="3_eqxii"]
+[ext_resource type="Script" uid="uid://cmhd65l0t78mn" path="res://Scenes/HUD/shopToggleButton.gd" id="3_etpdp"]
+[ext_resource type="PackedScene" uid="uid://7i3jv72difew" path="res://Scenes/Towers/default_tower.tscn" id="4_7nfgj"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_jg6e1")
@@ -23,11 +27,17 @@ layout_mode = 2
 [node name="LivesUI" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 9
 theme_override_font_sizes/font_size = 40
 
 [node name="waveUI" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.2932125, 0.7356472, 0.84950006, 1)
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 40
+
+[node name="moneyUI" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(18.892157, 14.701634, 0, 1)
+theme_override_constants/outline_size = 9
 theme_override_font_sizes/font_size = 40
