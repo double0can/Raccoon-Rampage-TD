@@ -21,6 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -56,7 +57,6 @@ text = "QUIT"
 flat = true
 
 [node name="LevelContainer" type="VBoxContainer" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -81,9 +81,17 @@ size_flags_horizontal = 0
 [node name="Map1" type="Button" parent="LevelContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 0
+size_flags_vertical = 6
 theme_override_font_sizes/font_size = 36
 text = "BACK ROADS"
+
+[node name="Map2" type="Button" parent="LevelContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "MUD RUN
+"
 
 [node name="BackButton" type="Button" parent="LevelContainer"]
 layout_mode = 2
@@ -100,4 +108,5 @@ size_flags_horizontal = 0
 [connection signal="pressed" from="MainContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="MainContainer/QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="LevelContainer/Map1" to="." method="_on_map_1_button_pressed"]
+[connection signal="pressed" from="LevelContainer/Map2" to="." method="_on_map_2_button_pressed"]
 [connection signal="pressed" from="LevelContainer/BackButton" to="." method="_on_back_button_pressed"]

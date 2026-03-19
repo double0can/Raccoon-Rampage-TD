@@ -1,5 +1,6 @@
-TextureRect
 Button
+TileMapLayer
+TextureRect
 VBoxContainer
 PanelContainer
 ColorRect
@@ -11,5 +12,3 @@ Sprite2D
 Timer
 Marker2D
 MarginContainer
-CanvasLayer
-Control
