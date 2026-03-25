@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://trrsa0xxbkr"]
+
+[ext_resource type="Script" uid="uid://d1oeyqv6gew32" path="res://Scenes/Sniper/Sniper Tower/sniper tower.gd" id="1_4f7dy"]
+[ext_resource type="PackedScene" uid="uid://p66er8b1xsoy" path="res://Scenes/Sniper/sniper bullet/sniper bullet.tscn" id="2_pm24k"]
+[ext_resource type="Texture2D" uid="uid://dfl2cwhstaqep" path="res://Assets/Towers/sniper tower.png" id="3_pm24k"]
+[ext_resource type="Texture2D" uid="uid://ccrsvt0q50bod" path="res://Assets/Towers/sniper weapon.png" id="4_pm24k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pm24k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4b1v"]
+size = Vector2(71, 21)
+
+[node name="Sniper Tower" type="Node2D"]
+script = ExtResource("1_4f7dy")
+bulletScene = ExtResource("2_pm24k")
+
+[node name="SniperSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_pm24k")
+
+[node name="weaponSprite" type="Sprite2D" parent="."]
+position = Vector2(0, 15)
+rotation = 0.41015238
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_pm24k")
+
+[node name="firePoint" type="Marker2D" parent="weaponSprite"]
+position = Vector2(215.79019, -15.316494)
+
+[node name="Range" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range"]
+scale = Vector2(200, 200)
+shape = SubResource("CircleShape2D_pm24k")
+
+[node name="FireRate" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="placementHitbox" type="Area2D" parent="." groups=["tower"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="placementHitbox"]
+position = Vector2(0, 45)
+shape = SubResource("RectangleShape2D_g4b1v")
+
+[connection signal="area_entered" from="Range" to="." method="_on_range_area_entered"]
+[connection signal="area_exited" from="Range" to="." method="_on_range_area_exited"]
+[connection signal="timeout" from="FireRate" to="." method="_on_fire_rate_timeout"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://p66er8b1xsoy"]
+
+[ext_resource type="Script" uid="uid://o74q8lhqgma7" path="res://Scenes/Sniper/sniper bullet/sniper bullet.gd" id="1_84530"]
+[ext_resource type="Texture2D" uid="uid://df2e4x41mq4mr" path="res://Scenes/Sniper/sniper bullet/bullet.png" id="2_pj2m3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_na6ux"]
+radius = 9.0
+
+[node name="bullet" type="Area2D"]
+script = ExtResource("1_84530")
+speed = 5000.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_pj2m3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_na6ux")
+debug_color = Color(0.28267738, 0.5705507, 0.7357563, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_entered"]

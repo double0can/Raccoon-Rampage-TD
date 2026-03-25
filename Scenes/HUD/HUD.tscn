@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://ct3h6kcm1gyr3"]
+[gd_scene load_steps=8 format=3 uid="uid://ct3h6kcm1gyr3"]
 
 [ext_resource type="Script" uid="uid://hm54tw8h516j" path="res://hud.gd" id="1_jg6e1"]
 [ext_resource type="Texture2D" uid="uid://djigo1dml81y7" path="res://Assets/Towers/raccoon.png" id="2_mdu8u"]
 [ext_resource type="Script" uid="uid://b43vx8cul31wu" path="res://Scenes/HUD/towerShopButton.gd" id="3_eqxii"]
 [ext_resource type="Script" uid="uid://cmhd65l0t78mn" path="res://Scenes/HUD/shopToggleButton.gd" id="3_etpdp"]
 [ext_resource type="PackedScene" uid="uid://7i3jv72difew" path="res://Scenes/Towers/default_tower.tscn" id="4_7nfgj"]
+[ext_resource type="Texture2D" uid="uid://dfl2cwhstaqep" path="res://Assets/Towers/sniper tower.png" id="5_lbxf6"]
+[ext_resource type="PackedScene" uid="uid://trrsa0xxbkr" path="res://Scenes/Sniper/Sniper Tower/sniper tower.tscn" id="6_mlcim"]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_jg6e1")
@@ -74,6 +76,15 @@ texture = ExtResource("2_mdu8u")
 expand_mode = 4
 script = ExtResource("3_eqxii")
 towerScene = ExtResource("4_7nfgj")
+
+[node name="sniperButton" type="TextureRect" parent="shopMenu/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 0
+texture = ExtResource("5_lbxf6")
+expand_mode = 4
+script = ExtResource("3_eqxii")
+towerScene = ExtResource("6_mlcim")
+towerPrice = 10
 
 [node name="shopToggleButton" type="Button" parent="."]
 anchors_preset = -1
