@@ -58,6 +58,9 @@ func is_invalid_location() -> bool:
 	for area in hitbox.get_overlapping_areas():
 		if area.is_in_group("path"):
 			return true # if touching path
+		
+		if area.is_in_group("tower"):
+			return true #if touching another tower
 			
 	return false #if safe to place
 
@@ -72,7 +75,7 @@ func drop_tower() -> void:
 	else:
 		#Spend the money
 		if GameManager.spendMoney(towerPrice):
-			# urn fully transparaent and turn script & timer back on
+			#turn fully transparaent and turn script & timer back on
 			ghost_tower.modulate = Color(1, 1, 1, 1)
 			ghost_tower.set_process(true)
 			ghost_tower.get_node("FireRate").start()

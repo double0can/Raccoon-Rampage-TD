@@ -31,7 +31,7 @@ func update_target():
 	if currentTarget != null:
 		if not is_instance_valid(currentTarget):
 			currentTarget = null
-			#cleanarray if the enemy died while in range
+			#clean array if the enemy died while in range
 			inRange = inRange.filter(func(e): return is_instance_valid(e))
 	
 	#pick the first enemy in range if none is already targeted

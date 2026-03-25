@@ -35,10 +35,10 @@ scale = Vector2(15, 15)
 shape = SubResource("CircleShape2D_1is5w")
 
 [node name="FireRate" type="Timer" parent="."]
-wait_time = 0.87
+wait_time = 1.15
 autostart = true
 
-[node name="placementHitbox" type="Area2D" parent="."]
+[node name="placementHitbox" type="Area2D" parent="." groups=["tower"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="placementHitbox"]
 position = Vector2(0, 45)

@@ -27,7 +27,7 @@ func nextWave() -> void:
 		
 	#increments difficulty
 	enemiesToSpawn = 20 + (currentWaveIndex * 15)
-	var spawnSpeed = max(0.2, 1.5 - (currentWaveIndex * 0.05))
+	var spawnSpeed = max(0.2, 1.5 - (currentWaveIndex * 0.25))
 	
 	spawnTimer.wait_time = spawnSpeed
 	
