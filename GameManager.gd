@@ -5,7 +5,7 @@ signal gameOver
 signal waveChanged(currentWave)
 signal moneyChanged(currentMoney)
 
-var lives = 20
+var lives = 5
 var currentWave = 1
 var money = 100
 

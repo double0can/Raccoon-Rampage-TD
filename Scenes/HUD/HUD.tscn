@@ -55,7 +55,6 @@ mouse_filter = 2
 color = Color(1, 0, 0, 0.15686275)
 
 [node name="shopMenu" type="PanelContainer" parent="."]
-visible = false
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
@@ -78,6 +77,12 @@ expand_mode = 4
 script = ExtResource("3_eqxii")
 towerScene = ExtResource("4_7nfgj")
 
+[node name="Label" type="Label" parent="shopMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Basic Raccoon: $75"
+
 [node name="sniperButton" type="TextureRect" parent="shopMenu/VBoxContainer"]
 layout_mode = 2
 mouse_filter = 0
@@ -85,7 +90,13 @@ texture = ExtResource("5_lbxf6")
 expand_mode = 4
 script = ExtResource("3_eqxii")
 towerScene = ExtResource("6_mlcim")
-towerPrice = 10
+towerPrice = 125
+
+[node name="Label2" type="Label" parent="shopMenu/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "Sniper Raccoon: $125"
 
 [node name="shopToggleButton" type="Button" parent="."]
 anchors_preset = -1
