@@ -56,13 +56,15 @@ func is_invalid_location() -> bool:
 	
 	#check what hitbox is touching
 	for area in hitbox.get_overlapping_areas():
-		if area.is_in_group("path"):
+		if area.is_in_group("path") or area.is_in_group("tower"):
 			return true # if touching path
 		
-		if area.is_in_group("tower"):
-			return true #if touching another tower
+	#checks if tower is on an invalide tile
+	for body in hitbox.get_overlapping_bodies():
+		if body.is_in_group("noTowerZone"):
+			return true
 			
-	return false #if safe to place
+	return false #if placement is valid
 
 func drop_tower() -> void:
 	is_dragging = false
