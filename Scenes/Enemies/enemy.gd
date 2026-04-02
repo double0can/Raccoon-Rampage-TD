@@ -3,7 +3,7 @@ extends PathFollow2D
 @export var speed = 125
 @export var playerDamage = 1
 @export var health = 1
-@export var value = 3
+@export var value = 2
 
 #built in function to call and object to move 60 times a second
 func _physics_process(delta: float) -> void:

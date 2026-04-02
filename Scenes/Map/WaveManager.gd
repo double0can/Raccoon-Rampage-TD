@@ -19,6 +19,7 @@ func _ready() -> void:
 func nextWave() -> void:
 	if currentWaveIndex > maxWaves:
 		print("victory!")
+		GameManager.gameWon.emit()
 		return
 		
 	#Reset tracking for new wave
@@ -26,7 +27,7 @@ func nextWave() -> void:
 	enemiesAlive = 0
 		
 	#increments difficulty
-	enemiesToSpawn = 20 + (currentWaveIndex * 15)
+	enemiesToSpawn = 20 + (currentWaveIndex * 10)
 	var spawnSpeed = max(0.2, 1.5 - (currentWaveIndex * 0.25))
 	
 	spawnTimer.wait_time = spawnSpeed
@@ -60,6 +61,9 @@ func spawnEnemy() -> void:
 func _on_enemy_destroyed() -> void:
 	enemiesAlive -= 1
 	
+	if not is_inside_tree(): #fix for mud run restart not working
+		return
+		
 	#If spawning is finished and no enemies remaining
 	if isSpawningDone and enemiesAlive <= 0:
 		print("Wave cleared")

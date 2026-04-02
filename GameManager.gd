@@ -4,6 +4,7 @@ signal livesChanged(currentLives)
 signal gameOver
 signal waveChanged(currentWave)
 signal moneyChanged(currentMoney)
+signal gameWon
 
 var lives = 5
 var currentWave = 1
@@ -14,6 +15,7 @@ func _ready() -> void:
 	livesChanged.emit(lives)
 	waveChanged.emit(currentWave)
 	moneyChanged.emit(money)
+	gameWon.connect(victoryScreen)
 
 func livesLost(amount: int) -> void:
 	lives -= amount
@@ -36,5 +38,10 @@ func spendMoney(amount: int) -> bool:
 		return true
 		
 	else:
-		print("Not enough monye")
+		print("Not enough money")
 		return false
+
+func victoryScreen():
+	var victory = preload("res://Scenes/Victory Scene/Victory.tscn").instantiate()
+	add_child(victory)
+	get_tree().paused = true 

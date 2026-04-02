@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://chmj35yee4ghh"]
+[gd_scene load_steps=6 format=3 uid="uid://chmj35yee4ghh"]
 
 [ext_resource type="Texture2D" uid="uid://poc6hfwyr4nj" path="res://Assets/title text.png" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://c7y8mv0gplghr" path="res://Scenes/Main Menu/mainMenu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://djigo1dml81y7" path="res://Assets/Towers/raccoon.png" id="3_fr3p2"]
+[ext_resource type="Texture2D" uid="uid://dfl2cwhstaqep" path="res://Assets/Towers/sniper tower.png" id="4_r7gth"]
+[ext_resource type="Texture2D" uid="uid://fx6m1vxqqew4" path="res://Assets/Enemies/trash bag.png" id="5_46knf"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -21,7 +24,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -56,7 +58,22 @@ theme_override_font_sizes/font_size = 113
 text = "QUIT"
 flat = true
 
+[node name="Sprite2D2" type="Sprite2D" parent="MainContainer"]
+position = Vector2(-500, 113)
+texture = ExtResource("3_fr3p2")
+
+[node name="Sprite2D3" type="Sprite2D" parent="MainContainer"]
+position = Vector2(800, 113)
+texture = ExtResource("4_r7gth")
+flip_h = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="MainContainer"]
+position = Vector2(132, 545)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_46knf")
+
 [node name="LevelContainer" type="VBoxContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

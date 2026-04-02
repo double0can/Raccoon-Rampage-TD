@@ -1,26 +1,21 @@
 extends CanvasLayer
 
-@onready var restartButton = $Control/VBoxContainer/RestartButton
+@onready var restartButton: Button = $Control/VBoxContainer/RestartButton
 @onready var menuButton: Button = $Control/VBoxContainer/MainMenuButton
-@onready var quitButton = $Control/VBoxContainer/QuitButton
+@onready var quitButton: Button = $Control/VBoxContainer/QuitButton
 
 func _ready() -> void:
-	# Hide the menu when the game starts
-	visible = false
-	
 	restartButton.pressed.connect(_on_restart_pressed)
 	menuButton.pressed.connect(_on_menu_pressed)
 	quitButton.pressed.connect(_on_quit_pressed)
-	
-	# listens for Game Over signal
-	GameManager.gameOver.connect(_on_game_over)
 
-func _on_game_over() -> void:
+func _on_game_won() -> void:
 	visible = true
 	# pauses the game on loss
 	get_tree().paused = true
 
 func _on_restart_pressed() -> void:
+	visible = false
 	# Reset lives in GameManager
 	GameManager.lives = 5 
 	
@@ -31,6 +26,7 @@ func _on_restart_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_menu_pressed() -> void:
+	visible = false
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://Scenes/Main Menu/main_menu.tscn")
 	

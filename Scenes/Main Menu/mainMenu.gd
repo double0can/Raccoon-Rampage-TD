@@ -16,7 +16,7 @@ func _on_quit_button_pressed() -> void:
 
 
 func _on_map_1_button_pressed() -> void:
-	GameManager.lives = 20
+	GameManager.lives = 5
 	GameManager.money = 100
 	GameManager.currentWave = 1
 	
@@ -30,7 +30,7 @@ func _on_back_button_pressed() -> void:
 
 func _on_map_2_button_pressed() -> void:
 	#incase they played on a different map before this one
-	GameManager.lives = 20
+	GameManager.lives = 5
 	GameManager.money = 100
 	GameManager.currentWave = 1
 	
