@@ -5,7 +5,7 @@ extends Node
 @onready var spawnTimer: Timer = $Timer
 
 var currentWaveIndex = 1
-var maxWaves = 30
+var maxWaves = 15
 var enemiesToSpawn = 0
 
 #trackers to start next wave
