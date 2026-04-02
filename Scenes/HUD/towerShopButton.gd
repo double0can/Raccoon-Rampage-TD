@@ -55,6 +55,7 @@ func is_invalid_location() -> bool:
 	var hitbox = ghost_tower.get_node("placementHitbox")
 	
 	#check what hitbox is touching
+	#checks if the tower is on path or on another tower
 	for area in hitbox.get_overlapping_areas():
 		if area.is_in_group("path") or area.is_in_group("tower"):
 			return true # if touching path
